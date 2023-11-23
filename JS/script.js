@@ -7,17 +7,17 @@ let issueitemyes = document.querySelector(".issueitemyes");
 let issueitemno = document.querySelector(".issueitemno");
 let issueitems = document.querySelector(".issueitems");
 let issuebtn = document.querySelector(".f-issue-btn");
-let smbtn = document.querySelector(".sm-btn");
-let userissuedesktopset = document.querySelector("#userissuedesktopset");
-let desktopsetdetails = document.querySelector("#desktopsetdetails");
-let userissuecpu = document.querySelector("#userissuecpu");
-let cpudetails = document.querySelector("#cpudetails");
-let userissuelcd = document.querySelector("#userissuelcd");
-let lcddetails = document.querySelector("#lcddetails");
-let userissuekeybord = document.querySelector("#userissuekeybord");
-let userissuemouse = document.querySelector("#userissuemouse");
-let keyboardyes = document.querySelector("#keyboardyes");
-let keyboardserialno = document.querySelector(".keyboardserialno");
+// let smbtn = document.querySelector(".sm-btn");
+// let userissuedesktopset = document.querySelector("#userissuedesktopset");
+// let desktopsetdetails = document.querySelector("#desktopsetdetails");
+// let userissuecpu = document.querySelector("#userissuecpu");
+// let cpudetails = document.querySelector("#cpudetails");
+// let userissuelcd = document.querySelector("#userissuelcd");
+// let lcddetails = document.querySelector("#lcddetails");
+// let userissuekeybord = document.querySelector("#userissuekeybord");
+// let userissuemouse = document.querySelector("#userissuemouse");
+// let keyboardyes = document.querySelector("#keyboardyes");
+// let keyboardserialno = document.querySelector(".keyboardserialno");
 
 
 
@@ -33,9 +33,6 @@ openSidebarMenu.addEventListener('click', function () {
 showSearch.addEventListener('click', function () {
     searchDiv.classList.toggle('d-block')
 })
-// aa.addEventListener('click', function () {
-    //    console.log("true");
-    // })
     
     
     //todo -->     Remove Classes 
@@ -60,19 +57,5 @@ issueitemno.addEventListener('click', function () {
 })
 
 
-
-userissuedesktopset.addEventListener('click', function () {
-    desktopsetdetails.classList.toggle('show-flex');
-    
-})
-userissuecpu.addEventListener('click', function () {
-    cpudetails.classList.toggle('show-flex')
-})
-userissuelcd.addEventListener('click', function () {
-    lcddetails.classList.toggle('show-flex')
-})
-keyboardyes.addEventListener('click', function () {
-    keyboardserialno.classList.add('show')
-})
 
 
