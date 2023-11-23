@@ -1,0 +1,237 @@
+
+/*? Brake Points
+
+<=1200
+<=992
+<=768
+<=640
+<=576
+<=430
+
+*/
+
+/*! brake point <=1200 */
+
+@media (width <=1200px) {
+    html {
+        font-size: 56.25%;
+        /*? 1rem = 9px */
+    }
+
+    .tbl {
+        font-size: 1.5rem;
+    }
+
+}
+
+/*! brake point <=992 */
+
+@media screen and (width <=992px) {
+
+    .sidebar {
+        display: none;
+
+    }
+
+
+    .left-header .bar {
+        display: block;
+    }
+
+    .d-block {
+        display: block;
+    }
+
+    .container {
+        width: 100%;
+        left: 0;
+    }
+
+    .cat {
+        left: 0;
+    }
+
+
+    .table {
+
+        width: 100%;
+        margin-top: 1rem;
+
+    }
+
+    /* .tbl {
+        width: 98%;
+
+
+    } */
+
+    .f-responsive {
+        width: var(--form-width-lt992);
+        padding: 0 1rem;
+
+    }
+
+    .mform-responsive {
+
+        width: var(--form-width-lt992);
+    }
+
+    .f-btn-inline {
+        justify-content: center;
+    }
+}
+
+
+
+/*! brake point <=768 */
+
+@media screen and (width <=768px) {
+    .main-field {
+        position: relative;
+        width: 100%;
+
+    }
+
+
+    .table {
+
+        width: 100%;
+        margin-top: 1rem;
+
+    }
+
+    .tbl {
+        width: 98%;
+
+
+    }
+    .mform-responsive {
+
+        width: var(--form-width-lt768);
+    }
+
+    .f-div>.input-field-inline {
+        display: block;
+    }
+
+    .f-div>.input-field-inline .mform-lb {
+        margin-bottom: var(--row-margin-bottom-half);
+    }
+
+    .input-field-inline :is(.input-checkbox, .input-radio) {
+        margin-bottom: var(--row-margin-bottom-half);
+    }
+
+}
+
+/*! brake point <=640 */
+
+@media screen and (width <=640px) {
+    .table {
+
+        width: 100%;
+        margin-top: 1rem;
+
+    }
+
+    .tbl {
+        width: 98%;
+        height: 100px;
+
+
+    }
+}
+
+/*! brake point <=576 */
+
+@media screen and (width <=576px) {
+    .sidebar {
+        width: var(--sidebar-width-lt576);
+    }
+
+    .submenu,
+    .submenu2 {
+        width: var(--sidebar-width-lt576);
+
+        left: var(--sidebar-width-lt576);
+
+    }
+
+    .submenu2 {
+        left: calc(var(--sidebar-width-lt576 - 10px));
+    }
+
+    .search-section {
+
+        right: 7rem;
+        width: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 0.8rem;
+
+    }
+
+    .search-section input[type="submit"] {
+        width: 10rem;
+
+    }
+
+    .f-responsive {
+        width: var(--form-width-lt576);
+        padding: 0 1rem;
+
+    }
+    input[type="text"],
+    .input-select {
+        border: none;
+        border-bottom: 1px solid;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+
+    .mform-responsive {
+        width: var(--form-width-lt576);
+    }
+
+    /* .f-div-inline {
+        display: block;
+    } */
+
+    .f-div-inline>.input-field {
+        width: 100%;
+    }
+
+    .input-field-inline {
+        display: block;
+        width: 100%;
+    }
+    .tbl{
+        width: 98%;
+        margin: 0 auto;
+      
+        
+    }
+}
+
+
+
+/*! brake point <=430 */
+
+
+
+@media screen and (width <=430px) {
+    .field-dis{
+        flex-wrap: wrap;
+    }
+    .fd-left{
+        width: 100%;
+    }
+    .field-dis:nth-child(2){
+        justify-content: end;
+    }
+}

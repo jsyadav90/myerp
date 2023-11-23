@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" ;
+}
+
+html{
+    font-size: 62.5%;
+    /*? 1rem = 10px; */
+    background-color: var(--background-color);
+    
+}
+:is(p, li, a){
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+}
+a{
+    text-decoration: none;
+    
+}
+li{
+    list-style: none;
+}
+
+
+
+@font-face {
+    font-family: "Poppins" ;
+    src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: "Urbanist" ;
+    src: url(../font/Urbanist/Urbanist-Regular.ttf);
+}
+
+:root{
+    --background-color:#fafafa;
+    --white-color:#fff;
+    --main-color:#3144ac;
+    --ground-field-color:#F0F0F0;
+    --cat-color:#F0F0F0;
+    --search-color: #176B87;
+    --menu-hover-color: #0062af;
+    --border-color-white:#fff;
+    --menu-text-color: #fff;
+    --category-color: #e7edf0;
+    --table-tr-hover-color: #ced6e0;
+    
+    --header-height:7rem;
+    --sidebar-width:16rem;
+    --sidebar-width-lt576:14rem;
+    --category-height:4rem;
+    --table-header-sticky:11rem;
+    --table-row-height:3rem;
+}
+
+:root{
+    --form-width-normal:70%;
+    --form-width-lt992:90%;
+    --form-width-lt768:85%;
+    --form-width-lt576:100%;
+    --row-margin-bottom-half:0.5rem;
+    --input-field-width:48%;
+    --form-padding-lr : 2rem;
+
+}
+
+:root{
+    --submit-color:#004225;
+}
+.btn{
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    font-size: 1.8rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    cursor: pointer;
+    border: 1px solid;
+    
+}
+.sm-btn{
+    padding: 0.2rem .5rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    font-size: 1.8rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    cursor: pointer;
+    border: 1px solid;
+    width: max-content;
+    
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 2rem;
+}
+
+.bg-green{
+    background-color: #4CAF50;
+    color: #fff;
+}
+.bg-blue{
+    background-color: #008CBA;
+    color: #fff;
+}
+.bg-red{
+    background-color: #f44336;
+    color: #fff;
+}
+.bg-gray{
+    background-color: #e7e7e7;
+    color: #000;
+}
+.bg-black{
+    background-color: #555555;
+    color: #fff;
+}
+.info{
+    background-color: #1795D4;
+    color: #fff;
+}
+
+
+
+.mt-05{
+    margin-top: .5rem !important;
+}
+.mt-1{
+    margin-top: 1rem !important;
+}
+.mt-15{
+    margin-top: 1.5rem !important;
+}
+.mt-2{
+    margin-top: 2rem !important;
+}
+.mt-25{
+    margin-top: 2.5rem !important;
+}
+.mt-3{
+    margin-top: 3rem !important;
+}
+.mt-35{
+    margin-top: 3.5rem !important;
+}
+.mt-4{
+    margin-top: 4rem !important;
+}
+.mt-45{
+    margin-top: 4.5rem !important;
+}
+.mt-5{
+    margin-top: 5rem !important;
+}
+.mb-05{
+    margin-bottom: .5rem !important;
+}
+.mb-1{
+    margin-bottom: 1rem !important;
+}
+.mb-15{
+    margin-bottom: 1.5rem !important;
+}
+.mb-2{
+    margin-bottom: 2rem !important;
+}
+.mb-25{
+    margin-bottom: 2.5rem !important;
+}
+.mb-3{
+    margin-bottom: 3rem !important;
+}
+.mb-35{
+    margin-bottom: 3.5rem !important;
+}
+.mb-4{
+    margin-bottom: 4rem !important;
+}
+.mb-45{
+    margin-bottom: 4.5rem !important;
+}
+.mb-5{
+    margin-bottom: 5rem !important;
+}
+.m-05{
+    margin: .5rem 0 !important;
+}
+.m-1{
+    margin: 1rem 0 !important;
+}
+.m-15{
+    margin: 1.5rem 0 !important;
+}
+.m-2{
+    margin: 2rem 0 !important;
+}
+.m-25{
+    margin: 2.5rem 0 !important;
+}
+.m-3{
+    margin: 3rem 0 !important;
+}
+.m-35{
+    margin: 3.5rem 0 !important;
+}
+.m-4{
+    margin: 4rem 0 !important;
+}
+.m-45{
+    margin: 4.5rem 0 !important;
+}
+.m-5{
+    margin: 5rem 0 !important;
+}
+.mr-05{
+    margin-right: .5rem !important;
+}
+.mr-1{
+    margin-right: 1rem !important;
+}
+.mr-15{
+    margin-right: 1.5rem !important;
+}
+.mr-2{
+    margin-right: 2rem !important;
+}
+.mr-25{
+    margin-right: 2.5rem !important;
+}
+.mr-3{
+    margin-right: 3rem !important;
+}
+.mr-35{
+    margin-right: 3.5rem !important;
+}
+.mr-4{
+    margin-right: 4rem !important;
+}
+.mr-45{
+    margin-right: 4.5rem !important;
+}
+.mr-5{
+    margin-right: 5rem !important;
+}
+

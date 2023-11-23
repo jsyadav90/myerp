@@ -1,0 +1,499 @@
+.search .fa-solid {
+    color: var(--white-color);
+    font-size: 1.8rem;
+    line-height: auto;
+    cursor: pointer;
+}
+
+.header {
+    background-color: var(--main-color);
+    width: 100%;
+    height: var(--header-height);
+    max-height: var(--header-height);
+    padding: 0 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 11;
+}
+
+.left-header {
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 1rem;
+
+}
+
+
+.left-header .bar {
+    cursor: pointer;
+    display: none;
+}
+.left-header a {
+    color: var(--white-color);
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.right-header .search {
+    position: relative;
+}
+
+.right-header input[type="text"] {
+    padding: 0.4rem 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: none;
+    font-size: 1.8rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+
+#search-btn {
+    background-color: var(--search-color);
+    color: var(--white-color);
+}
+
+.right-header .user {
+    color: var(--white-color);
+    font-size: 1.8rem;
+}
+
+.right-header .user span {
+    padding: 0.5rem 0.9rem;
+}
+
+.searchbar {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: rgba(127, 127, 133, 0.733);
+    display: none;
+
+
+}
+
+.search-section {
+    position: absolute;
+    top: 8rem;
+    right: 15rem;
+    width: 35rem;
+    justify-content: space-between;
+    z-index: 101;
+}
+
+
+.search-section input[type="text"] {
+    width: 70%;
+    border: 1px solid;
+    margin-right: 0.7rem;
+    height: 3.5rem;
+    font-size: 1.7rem;
+    padding: 0.2rem 1rem;
+    border-radius: 0.375rem;
+    -webkit-border-radius: 0.375rem;
+    -moz-border-radius: 0.375rem;
+    -ms-border-radius: 0.375rem;
+    -o-border-radius: 0.375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    border: 1px solid;
+}
+
+.d-block {
+    display: block;
+}
+
+/*? sidebar */
+
+.sidebar {
+    top: var(--header-height);
+    width: var(--sidebar-width);
+    height: calc(100vh - var(--header-height));
+    background-color: var(--main-color);
+    position: fixed;
+    z-index: 11;
+
+}
+
+.sidebar .menu {
+    width: 100%;
+    position: relative;
+}
+
+.sidebar .menu ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .menu ul li {
+    width: 100%;
+    position: relative;
+
+
+}
+
+.sidebar .menu ul li:hover {
+    background-color: var(--menu-hover-color);
+}
+
+.sidebar .menu ul li a {
+    width: 100%;
+    display: block;
+    color: var(--white-color);
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+
+}
+
+.sidebar .menu ul li:hover a {
+    color: var(--menu-text-color);
+}
+
+
+
+.submenu, .submenu2 {
+    display: none;
+    /* width: 100%; */
+    background-color: var(--main-color);
+    border-left: 0.1rem solid var(--menu-text-color);
+    width: var(--sidebar-width);
+    position: absolute;
+    left: var(--sidebar-width);
+    top: 0;
+}
+.submenu2{
+    width: 12rem;
+    left: 159px;
+}
+
+
+.sub:hover .submenu, .sub2:hover .submenu2 {
+    display: block;
+}
+
+
+
+
+
+/* ?  main-field */
+
+
+.container {
+    width: calc(100% - var(--sidebar-width));
+    height: calc(100% - var(--header-height - 5px)) ;
+    position: absolute;
+    top: var(--header-height);
+    left: var(--sidebar-width);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cat {
+    box-shadow: 0 0 2px .5px black;
+    width: 100%;
+    position: sticky;
+    top: var(--header-height);
+    height: 4rem;
+    z-index: 9;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    background-color: aquamarine;
+}
+.cat span{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main-container{
+    position: relative;
+    top: 0;
+}
+
+
+/*? Table Start  */
+
+
+.tbl{
+    width: 98%;
+    margin: 0 1rem;
+    font-size: 2rem;
+    overflow: auto;
+    max-width: fit-content;
+    border-top: 1px solid;
+    font-size: 1.4rem;
+}
+
+.tbl::-webkit-scrollbar{
+    display: none;
+}
+table,th, td {
+    
+    border: .5px solid;
+    border-collapse: collapse;
+    border-top: 0;
+}
+
+th, td{
+    /* width: 15rem; */
+    min-width: 12rem;
+    padding: .5rem;
+    text-wrap: wrap;
+}
+
+th{
+    position: sticky;
+    top: 0px;
+    background-color: aqua;
+
+}
+
+tr:last-child{
+    border-bottom: 0;
+}
+th:first-child{
+    max-width: 5rem;
+}
+
+
+.tbl-btn a img {
+    width: 2rem;
+    margin-right: 1rem;
+
+}
+
+
+
+
+/*? Form */
+
+
+
+legend {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    margin: 1.8rem 0;
+
+}
+form :is(input[type=text],input[type=number],
+input[type=email],.input-select)
+{
+    height: 3.5rem;
+    font-size: 1.4rem;
+    padding: 0.2rem 1rem;
+    border-radius: 0.375rem;
+    -webkit-border-radius: 0.375rem;
+    -moz-border-radius: 0.375rem;
+    -ms-border-radius: 0.375rem;
+    -o-border-radius: 0.375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    width: 100%;
+    border: 1px solid;
+}
+
+
+.f-responsive {
+    width: var(--form-width-normal);
+    margin: 1rem auto;
+
+}
+
+.mform {
+    display: block;
+    padding: 0.5rem;
+}
+
+
+.f-responsive .mform .form-header{
+    width: 100%;
+    margin-bottom: 3rem;
+
+}
+
+.f-responsive .mform .form-header p{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.f-div {
+    display: block;
+    padding: 0 2rem;
+}
+
+.f-div>.input-field {
+    margin-bottom: var(--row-margin-bottom-half);
+
+}
+
+.input-field .mform-lb {
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    margin-bottom: var(--row-margin-bottom-half);
+    font-family: poppins;
+    font-weight: 500;
+
+}
+
+
+.f-div>.input-field-inline {
+    margin-bottom: var(--row-margin-bottom-half);
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.f-div>.input-field-inline>.mform-lb {
+    width: 30%;
+    display: block;
+    font-size: 1.8rem;
+    font-family: poppins;
+    font-weight: bold;
+}
+
+.f-div-inline {
+    padding: 0 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+    width: 100%;
+}
+
+.f-div-inline>.input-field {
+    width: var(--input-field-width);
+
+}
+.f-div-inline>.input-field {
+    width: 48%;
+    height: 7.7rem;
+    margin-bottom: .4rem;
+}
+.f-checkbox-inline,
+.f-radio-inline {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    align-items: center;
+}
+
+:is(.input-checkbox, .input-radio) {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.input-checkbox input[type=checkbox],
+.input-checkbox .mform-ch-lb,
+.input-radio input[type=radio],
+.input-radio .mform-ch-lb {
+    font-size: 1.7rem;
+    padding: 0.2rem 0;
+}
+.f-btn-inline {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 0 2rem;
+}
+.field-dis{
+    display: flex;
+    width: calc(100% - var(--form-padding-lr));
+    justify-content: space-between;
+    margin-bottom: 1.3rem;
+    outline: none;
+    
+}
+.fd-left{
+    min-width: 11rem;
+    
+}
+.fd-left p{
+    font-size: 2rem;
+    font-weight: 700;
+    border-bottom: 2px solid black;
+}
+
+.fd-right{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.fd-right label{
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-right: .7rem;
+}
+.fd-right .to-size{
+    font-size: 1.7rem;
+    text-decoration: underline;
+    text-underline-offset: .4rem;
+}
+
+.fd-right .no-of{
+   font-size: 1.7rem;
+   text-decoration: underline;
+   text-underline-offset: .4rem;
+}
+.fd-right .add-item{
+    height: 3.5rem;
+    list-style: 3.5rem ;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.fd-right .add-item img{
+    width: 2.2rem;
+    font-weight: 700;
+
+
+}
+.fd-right .add-item a{
+    color: green;
+}
+
+
+/* .issueitems{
+    display: none;
+    
+} */
+.f-issue-btn{
+    display: none;
+}
+
+.f-issue-btn:checked ~ .sm-btn{
+    background-color: green;
+    color: #fff;
+}
+
+.d-none{
+    display: none;
+}
+
+

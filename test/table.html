@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/root.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/media.css">
+</head>
+
+<body>
+
+    <!--? Header -->
+
+    <div class="header">
+
+        <div class="left-header">
+            <!-- ! bar -->
+            <div class="bar">
+                <img src="image/icon/menu-bar.webp" alt="" width="40px" id="opensidebarmenu">
+
+            </div>
+
+            <!-- ! End bar -->
+
+
+            <!--! logo -->
+
+            <div class="logo">
+                <a href="">
+                    <Span>LOGO</Span>
+                </a>
+            </div>
+            <!--! End logo -->
+
+        </div>
+
+        <div class="right-header">
+
+
+            <!--! search -->
+            <div class="search">
+
+                <i class="fa-solid fa-magnifying-glass fa-2xl showsearch" style="color: #ffffff;"></i>
+
+            </div>
+            <!--! End search -->
+
+
+            <!--! User -->
+            <div class="user">
+                <Span>Jitender</Span>
+            </div>
+            <!--! End User -->
+
+        </div>
+    </div>
+
+    <div class="searchbar">
+        <div class="search-section">
+            <input type="text" id="search-input">
+            <input type="submit" value="Search" class="btn" id="search-btn">
+
+        </div>
+    </div>
+
+    <!--? END Header -->
+
+    <!--? Sidebar  -->
+
+    <div class="sidebar" id="sidebarmenu">
+
+
+        <div class="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+
+                <li class="sub"><a> User</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="../user.html">User</a></li>
+                            <li><a href="../add-user.html">Registration</a></li>
+                            <li><a href="../update-user.html">Update</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li class="sub"><a>Inventory</a>
+                    <div class="submenu">
+                        <ul>
+                            <li class="sub2"><a>CPU</a>
+                                <div class="submenu2">
+                                    <ul>
+                                        <li><a href="../cpu.html">CPU</a></li>
+                                        <li><a href="../add-cpu.html">Add</a></li>
+                                        <li><a href="../update-cpu.html">Update</a></li>
+                                    </ul>
+
+                                </div>
+
+                            </li>
+                            <li class="sub2"><a>Monitor</a>
+                                <div class="submenu2">
+                                    <ul>
+                                        <li><a href="">Monitor</a></li>
+                                        <li><a href="">Add</a></li>
+                                        <li><a href="">Update</a></li>
+                                    </ul>
+
+                                </div>
+
+                            </li>
+                            <li class="sub2"><a>Printer</a>
+                                <div class="submenu2">
+                                    <ul>
+                                        <li><a href="">Printer</a></li>
+                                        <li><a href="">Add</a></li>
+                                        <li><a href="">Update</a></li>
+                                    </ul>
+
+                                </div>
+
+                            </li>
+                            <li><a href="">Other</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="menu.html">Home4</a></li>
+
+                <li class="sub"><a>Home5</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Submenu-2</a></li>
+                            <li><a href="">Submenu-2</a></li>
+                            <li><a href="">Submenu-2</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li class="sub"><a>Test</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="table.html">Test Table</a></li>
+                            <li><a href="form.html">Test Form</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <!--? End Sidebar  -->
+
+
+    <!--? Main Container  -->
+
+    <section class="container">
+
+        <div class="cat">
+            <span>User</span>
+        </div>
+
+        <div class="main-container">
+
+
+
+
+
+            <div class="tbl">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>F Name</th>
+                            <th>L Name</th>
+                            <th>Address</th>
+                            <th>Email ID</th>
+                            <th>Mobile</th>
+                            <th>Gender</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jitender</td>
+                            <td>Yadav</td>
+                            <td>Jhajjar slksdlfk askdfsa</td>
+                            <td>jitender@abc.com</td>
+                            <td>8732589935</td>
+                            <td>Male</td>
+                            <td>active</td>
+                            <td class="tbl-btn">
+                                <a href=""><img src="../image/icon/edit.webp" alt="Edit User"></a>
+                                <a href=""><img src="../image/icon/disable-user.webp" alt="disable-user"></a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sonu</td>
+                            <td>Yadav</td>
+                            <td>Jhajjar</td>
+                            <td>sonu@abc.com</td>
+                            <td>7864539752</td>
+                            <td>Male</td>
+                            <td>active</td>
+                            <td class="tbl-btn">
+                                <a href=""><img src="../image/icon/edit.webp" alt="Edit User"></a>
+                                <a href=""><img src="../image/icon/disable-user.webp" alt="disable-user"></a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Parveen</td>
+                            <td>Kumari</td>
+                            <td>Gurgaon</td>
+                            <td>parveen@rew.in</td>
+                            <td>9643734129</td>
+                            <td>Female</td>
+                            <td>active</td>
+                            <td class="tbl-btn">
+                                <a href=""><img src="../image/icon/edit.webp" alt="Edit User"></a>
+                                <a href=""><img src="../image/icon/disable-user.webp" alt="disable-user"></a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Yogesh</td>
+                            <td>Sharma</td>
+                            <td>Delhi</td>
+                            <td>yogesh@jgd.com</td>
+                            <td>3246321423</td>
+                            <td>Male</td>
+                            <td>active</td>
+                            <td class="tbl-btn">
+                                <a href=""><img src="../image/icon/edit.webp" alt="Edit User"></a>
+                                <a href=""><img src="../image/icon/disable-user.webp" alt="disable-user"></a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Neetu</td>
+                            <td>Goyal</td>
+                            <td>Bhiwani</td>
+                            <td>neetu@ads.com</td>
+                            <td>7540935631</td>
+                            <td>Female</td>
+                            <td>active</td>
+                            <td class="tbl-btn">
+                                <a href=""><img src="../image/icon/edit.webp" alt="Edit User"></a>
+                                <a href=""><img src="../image/icon/disable-user.webp" alt="disable-user"></a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jitender</td>
+                            <td>Yadav</td>
+                            <td>Jhajjar</td>
+                            <td>jitender@abc.com</td>
+                            <td>8732589935</td>
+                            <td>Male</td>
+                            <td>active</td>
+                            <td class="tbl-btn">
+                                <a href=""><img src="../image/icon/edit.webp" alt="Edit User"></a>
+                                <a href=""><img src="../image/icon/disable-user.webp" alt="disable-user"></a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sonu</td>
+                            <td>Yadav</td>
+                            <td>Jhajjar</td>
+                            <td>sonu@abc.com</td>
+                            <td>7864539752</td>
+                            <td>Male</td>
+                            <td>active</td>
+                            <td class="tbl-btn">
+                                <a href=""><img src="../image/icon/edit.webp" alt="Edit User"></a>
+                                <a href=""><img src="../image/icon/disable-user.webp" alt="disable-user"></a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Parveen</td>
+                            <td>Kumari</td>
+                            <td>Gurgaon</td>
+                            <td>parveen@rew.in</td>
+                            <td>9643734129</td>
+                            <td>Female</td>
+                            <td>active</td>
+                            <td class="tbl-btn">
+                                <a href=""><img src="../image/icon/edit.webp" alt="Edit User"></a>
+                                <a href=""><img src="../image/icon/disable-user.webp" alt="disable-user"></a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Yogesh</td>
+                            <td>Sharma</td>
+                            <td>Delhi</td>
+                            <td>yogesh@jgd.com</td>
+                            <td>3246321423</td>
+                            <td>Male</td>
+                            <td>active</td>
+                            <td class="tbl-btn">
+                                <a href=""><img src="../image/icon/edit.webp" alt="Edit User"></a>
+                                <a href=""><img src="../image/icon/disable-user.webp" alt="disable-user"></a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Neetu</td>
+                            <td>Goyal</td>
+                            <td>Bhiwani</td>
+                            <td>neetu@ads.com</td>
+                            <td>7540935631</td>
+                            <td>Female</td>
+                            <td>active</td>
+                            <td class="tbl-btn">
+                                <a href=""><img src="../image/icon/edit.webp" alt="Edit User"></a>
+                                <a href=""><img src="../image/icon/disable-user.webp" alt="disable-user"></a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jitender</td>
+                            <td>Yadav</td>
+                            <td>Jhajjar</td>
+                            <td>jitender@abc.com</td>
+                            <td>8732589935</td>
+                            <td>Male</td>
+                            <td>active</td>
+                            <td class="tbl-btn">
+                                <a href=""><img src="../image/icon/edit.webp" alt="Edit User"></a>
+                                <a href=""><img src="../image/icon/disable-user.webp" alt="disable-user"></a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sonu</td>
+                            <td>Yadav</td>
+                            <td>Jhajjar</td>
+                            <td>sonu@abc.com</td>
+                            <td>7864539752</td>
+                            <td>Male</td>
+                            <td>active</td>
+                            <td class="tbl-btn">
+                                <a href=""><img src="../image/icon/edit.webp" alt="Edit User"></a>
+                                <a href=""><img src="../image/icon/disable-user.webp" alt="disable-user"></a>
+
+                            </td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--?End Main Container  -->
+
+
+
+
+
+
+
+
+
+    <script src="JS/script.js"></script>
+
+</body>
+
+</html>

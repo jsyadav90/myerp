@@ -1,0 +1,39 @@
+.tbl{
+    width: 98%;
+    margin: 0 1rem;
+    height: 300px;
+    font-size: 2rem;
+    overflow: auto;
+    max-width: fit-content;
+    border: 1px solid;
+}
+
+.tbl::-webkit-scrollbar{
+    display: none;
+}
+table,th, td {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+th, td{
+    border: 1px solid;
+    width: 10rem;
+    min-width: 10rem;
+    padding: .5rem 1rem;
+    text-wrap: wrap;
+}
+
+th{
+    position: sticky;
+    top: 0px;
+    background-color: aqua;
+    border-top: 0;
+
+}
+
+tr:last-child{
+    border-bottom: 0;
+}
+
+

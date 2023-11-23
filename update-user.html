@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/root.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/media.css">
+</head>
+
+<body>
+
+    <!--? Header -->
+
+    <div class="searchbar">
+        <div class="search-section">
+            <input type="text" id="search-input">
+            <input type="submit" value="Search" class="btn" id="search-btn">
+
+        </div>
+    </div>
+
+    <div class="header">
+
+        <div class="left-header">
+            <!-- ! bar -->
+            <div class="bar">
+                <img src="image/icon/menu-bar.webp" alt="" width="40px" id="opensidebarmenu">
+
+            </div>
+
+            <!-- ! End bar -->
+
+
+            <!--! logo -->
+
+            <div class="logo">
+                <a href="">
+                    <Span>LOGO</Span>
+                </a>
+            </div>
+            <!--! End logo -->
+
+
+
+        </div>
+
+        <div class="right-header">
+
+
+            <!--! search -->
+            <div class="search">
+
+                <i class="fa-solid fa-magnifying-glass fa-2xl showsearch" style="color: #ffffff;"></i>
+
+
+
+
+
+            </div>
+
+
+
+            <!--! End search -->
+
+
+            <!--! User -->
+            <div class="user">
+                <Span>Jitender</Span>
+            </div>
+            <!--! End User -->
+
+
+
+        </div>
+    </div>
+
+
+
+    <!--? END Header -->
+
+    <!--? Sidebar  -->
+
+    <div class="sidebar" id="sidebarmenu">
+
+     
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li class="sub"><a> User</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="user.html">User</a></li>
+                            <li><a href="add-user.html">Registration</a></li>
+                            <li><a href="update-user.html">Update</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li class="sub"><a>Inventory</a>
+                    <div class="submenu">
+                        <ul>
+                            <li class="sub2"><a>CPU</a>
+                                <div class="submenu2">
+                                    <ul>
+                                        <li><a href="cpu.html">CPU</a></li>
+                                        <li><a href="add-cpu.html">Add</a></li>
+                                        <li><a href="update-cpu.html">Update</a></li>
+                                    </ul>
+
+                                </div>
+                            
+                            </li>
+                            <li class="sub2"><a>Monitor</a>
+                                <div class="submenu2">
+                                    <ul>
+                                        <li><a href="">Monitor</a></li>
+                                        <li><a href="">Add</a></li>
+                                        <li><a href="">Update</a></li>
+                                    </ul>
+
+                                </div>
+                            
+                            </li>
+                            <li class="sub2"><a>Printer</a>
+                                <div class="submenu2">
+                                    <ul>
+                                        <li><a href="">Printer</a></li>
+                                        <li><a href="">Add</a></li>
+                                        <li><a href="">Update</a></li>
+                                    </ul>
+
+                                </div>
+                            
+                            </li>
+                            <li><a href="">Other</a></li>
+                           
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="menu.html">Home4</a></li>
+                
+                <li class="sub"><a>Home5</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="">Submenu-2</a></li>
+                            <li><a href="">Submenu-2</a></li>
+                            <li><a href="">Submenu-2</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li class="sub"><a >Test</a>
+                    <div class="submenu">
+                        <ul>
+                            <li><a href="test/table.html">Test Table</a></li>
+                            <li><a href="test/form.html">Test Form</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+
+    <!--? End Sidebar  -->
+
+    <section class="container">
+
+        <div class="cat">
+            <span>User</span>
+        </div>
+
+        <div class="main-container">
+
+
+            <div class="f-responsive">
+                <div class="mform">
+
+                    <div class="form-header">
+                        <p>
+                            User Updation
+                        </p>
+                    </div>
+
+                    <form action="#">
+
+
+
+
+                        <legend>Basic Information</legend>
+                        <div class="f-div-inline">
+                            <div class="input-field">
+                                <label class="mform-lb" for="fname">First Name</label>
+                                <input type="text" id="fname" class="input-text">
+                            </div>
+                            <div class="input-field">
+                                <label class="mform-lb" for="lname">Last Name</label>
+                                <input type="text" id="lname" class="input-text">
+                            </div>
+                            <div class="input-field">
+                                <label class="mform-lb" for="designation">Designation</label>
+                                <input type="text" id="designation" class="input-text">
+                            </div>
+                           
+                            <div class="input-field">
+                                <label class="mform-lb" for="department">Department</label>
+                                <select name="" id="department" class="input-select">
+                                    <option disabled>select</option>
+                                    <option value="teacher">Teacher</option>
+                                    <option value="admin">Admin</option>
+                                    <option value="schooloffice">School Office</option>
+                                </select>
+                            </div>
+                           
+                            
+
+                        </div>
+
+
+                        <legend>Other information</legend>
+                        <div class="f-div-inline">
+                            <div class="input-field">
+                                <label class="mform-lb">Gender</label>
+                                <div class="f-radio-inline">
+                                    <div class="input-radio">
+                                        <input type="radio" value="male" id="male" name="gender">
+                                        <label class="mform-ch-lb" for="male">Male</label>
+
+                                    </div>
+                                    <div class="input-radio">
+                                        <input type="radio" value="female" id="female" name="gender">
+                                        <label class="mform-ch-lb" for="female">Female</label>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-field">
+                                <label class="mform-lb" for="mobile">Mobile No.</label>
+                                <input type="number" id="mobile" class="input-text">
+                            </div>
+                            <div class="input-field">
+                                <label class="mform-lb" for="email">E-mail Id</label>
+                                <input type="email" id="email" class="input-text">
+                            </div>
+                            <div class="input-field">
+                                <label class="mform-lb" for="email">Address</label>
+                                <input type="email" id="email" class="input-text">
+                                <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+                            </div>
+                            
+
+                        </div>
+
+
+                        <div class="f-btn-inline">
+                            <div class="button">
+                                <input type="submit" class="btn bg-green">
+                            </div>
+                            <div class="button">
+                                <input type="reset" class="btn bg-blue">
+                            </div>
+                            
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="JS/script.js"></script>
+
+</body>
+
+</html>
